@@ -259,6 +259,10 @@ def generate_files(repo_dir, context=None, output_dir='.',
     :param overwrite_if_exists: Overwrite the contents of the output directory
         if it exists.
     """
+
+    # Testing local version
+    print("Running Brad's version of Cookiecutter!\n")
+
     template_dir = find_template(repo_dir)
     logger.debug('Generating project from {}...'.format(template_dir))
     context = context or OrderedDict([])
